@@ -32,6 +32,7 @@ ENV ZEPPELIN_HOME /usr/zeppelin
 ENV ZEPPELIN_CONF_DIR $ZEPPELIN_HOME/conf
 ENV ZEPPELIN_NOTEBOOK_DIR $ZEPPELIN_HOME/notebook
 ENV ZEPPELIN_COMMIT v0.7.3
+ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64/
 RUN echo '{ "allow_root": true }' > /root/.bowerrc
 RUN set -ex \
  && buildDeps=' \
