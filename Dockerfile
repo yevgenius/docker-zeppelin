@@ -1,4 +1,4 @@
-FROM gettyimages/spark:2.2.0-hadoop-2.7
+FROM mesosphere/spark:1.1.1-2.2.0-hadoop-2.7
 
 # SciPy
 RUN set -ex \
@@ -7,6 +7,7 @@ RUN set -ex \
     build-essential \
     pkg-config \
     gfortran \
+    python3-pip \
  ' \
  && apt-get update && apt-get install -y --no-install-recommends \
     $buildDeps \
